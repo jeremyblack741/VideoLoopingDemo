@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FE125FE1911790000037955 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE125FD1911790000037955 /* Foundation.framework */; };
+		4FE126001911790000037955 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE125FF1911790000037955 /* CoreGraphics.framework */; };
+		4FE126021911790000037955 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE126011911790000037955 /* UIKit.framework */; };
+		4FE126081911790000037955 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FE126061911790000037955 /* InfoPlist.strings */; };
+		4FE1260A1911790000037955 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE126091911790000037955 /* main.m */; };
+		4FE1260E1911790000037955 /* ARAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1260D1911790000037955 /* ARAppDelegate.m */; };
+		4FE126111911790000037955 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE1260F1911790000037955 /* Main_iPhone.storyboard */; };
+		4FE126141911790000037955 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE126121911790000037955 /* Main_iPad.storyboard */; };
+		4FE126171911790000037955 /* ARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE126161911790000037955 /* ARViewController.m */; };
+		4FE126191911790000037955 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FE126181911790000037955 /* Images.xcassets */; };
+		4FE126201911790100037955 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE1261F1911790100037955 /* XCTest.framework */; };
+		4FE126211911790100037955 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE125FD1911790000037955 /* Foundation.framework */; };
+		4FE126221911790100037955 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE126011911790000037955 /* UIKit.framework */; };
+		4FE1262A1911790100037955 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FE126281911790100037955 /* InfoPlist.strings */; };
+		4FE1262C1911790100037955 /* VideoLoopingDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1262B1911790100037955 /* VideoLoopingDemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4FE126231911790100037955 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FE125F21911790000037955 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FE125F91911790000037955;
+			remoteInfo = VideoLoopingDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4FE125FA1911790000037955 /* VideoLoopingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoLoopingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FE125FD1911790000037955 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4FE125FF1911790000037955 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4FE126011911790000037955 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4FE126051911790000037955 /* VideoLoopingDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VideoLoopingDemo-Info.plist"; sourceTree = "<group>"; };
+		4FE126071911790000037955 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4FE126091911790000037955 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4FE1260B1911790000037955 /* VideoLoopingDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoLoopingDemo-Prefix.pch"; sourceTree = "<group>"; };
+		4FE1260C1911790000037955 /* ARAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARAppDelegate.h; sourceTree = "<group>"; };
+		4FE1260D1911790000037955 /* ARAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARAppDelegate.m; sourceTree = "<group>"; };
+		4FE126101911790000037955 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		4FE126131911790000037955 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		4FE126151911790000037955 /* ARViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARViewController.h; sourceTree = "<group>"; };
+		4FE126161911790000037955 /* ARViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARViewController.m; sourceTree = "<group>"; };
+		4FE126181911790000037955 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4FE1261E1911790100037955 /* VideoLoopingDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoLoopingDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FE1261F1911790100037955 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4FE126271911790100037955 /* VideoLoopingDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VideoLoopingDemoTests-Info.plist"; sourceTree = "<group>"; };
+		4FE126291911790100037955 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4FE1262B1911790100037955 /* VideoLoopingDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoLoopingDemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FE125F71911790000037955 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FE126001911790000037955 /* CoreGraphics.framework in Frameworks */,
+				4FE126021911790000037955 /* UIKit.framework in Frameworks */,
+				4FE125FE1911790000037955 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FE1261B1911790100037955 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FE126201911790100037955 /* XCTest.framework in Frameworks */,
+				4FE126221911790100037955 /* UIKit.framework in Frameworks */,
+				4FE126211911790100037955 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FE125F11911790000037955 = {
+			isa = PBXGroup;
+			children = (
+				4FE126031911790000037955 /* VideoLoopingDemo */,
+				4FE126251911790100037955 /* VideoLoopingDemoTests */,
+				4FE125FC1911790000037955 /* Frameworks */,
+				4FE125FB1911790000037955 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4FE125FB1911790000037955 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FE125FA1911790000037955 /* VideoLoopingDemo.app */,
+				4FE1261E1911790100037955 /* VideoLoopingDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FE125FC1911790000037955 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FE125FD1911790000037955 /* Foundation.framework */,
+				4FE125FF1911790000037955 /* CoreGraphics.framework */,
+				4FE126011911790000037955 /* UIKit.framework */,
+				4FE1261F1911790100037955 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FE126031911790000037955 /* VideoLoopingDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4FE1260C1911790000037955 /* ARAppDelegate.h */,
+				4FE1260D1911790000037955 /* ARAppDelegate.m */,
+				4FE1260F1911790000037955 /* Main_iPhone.storyboard */,
+				4FE126121911790000037955 /* Main_iPad.storyboard */,
+				4FE126151911790000037955 /* ARViewController.h */,
+				4FE126161911790000037955 /* ARViewController.m */,
+				4FE126181911790000037955 /* Images.xcassets */,
+				4FE126041911790000037955 /* Supporting Files */,
+			);
+			path = VideoLoopingDemo;
+			sourceTree = "<group>";
+		};
+		4FE126041911790000037955 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FE126051911790000037955 /* VideoLoopingDemo-Info.plist */,
+				4FE126061911790000037955 /* InfoPlist.strings */,
+				4FE126091911790000037955 /* main.m */,
+				4FE1260B1911790000037955 /* VideoLoopingDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4FE126251911790100037955 /* VideoLoopingDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				4FE1262B1911790100037955 /* VideoLoopingDemoTests.m */,
+				4FE126261911790100037955 /* Supporting Files */,
+			);
+			path = VideoLoopingDemoTests;
+			sourceTree = "<group>";
+		};
+		4FE126261911790100037955 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FE126271911790100037955 /* VideoLoopingDemoTests-Info.plist */,
+				4FE126281911790100037955 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FE125F91911790000037955 /* VideoLoopingDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FE1262F1911790100037955 /* Build configuration list for PBXNativeTarget "VideoLoopingDemo" */;
+			buildPhases = (
+				4FE125F61911790000037955 /* Sources */,
+				4FE125F71911790000037955 /* Frameworks */,
+				4FE125F81911790000037955 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoLoopingDemo;
+			productName = VideoLoopingDemo;
+			productReference = 4FE125FA1911790000037955 /* VideoLoopingDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4FE1261D1911790100037955 /* VideoLoopingDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FE126321911790100037955 /* Build configuration list for PBXNativeTarget "VideoLoopingDemoTests" */;
+			buildPhases = (
+				4FE1261A1911790100037955 /* Sources */,
+				4FE1261B1911790100037955 /* Frameworks */,
+				4FE1261C1911790100037955 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FE126241911790100037955 /* PBXTargetDependency */,
+			);
+			name = VideoLoopingDemoTests;
+			productName = VideoLoopingDemoTests;
+			productReference = 4FE1261E1911790100037955 /* VideoLoopingDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FE125F21911790000037955 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AR;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Jeremy Black";
+				TargetAttributes = {
+					4FE1261D1911790100037955 = {
+						TestTargetID = 4FE125F91911790000037955;
+					};
+				};
+			};
+			buildConfigurationList = 4FE125F51911790000037955 /* Build configuration list for PBXProject "VideoLoopingDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FE125F11911790000037955;
+			productRefGroup = 4FE125FB1911790000037955 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FE125F91911790000037955 /* VideoLoopingDemo */,
+				4FE1261D1911790100037955 /* VideoLoopingDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FE125F81911790000037955 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FE126141911790000037955 /* Main_iPad.storyboard in Resources */,
+				4FE126191911790000037955 /* Images.xcassets in Resources */,
+				4FE126111911790000037955 /* Main_iPhone.storyboard in Resources */,
+				4FE126081911790000037955 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FE1261C1911790100037955 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FE1262A1911790100037955 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FE125F61911790000037955 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FE1260A1911790000037955 /* main.m in Sources */,
+				4FE126171911790000037955 /* ARViewController.m in Sources */,
+				4FE1260E1911790000037955 /* ARAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FE1261A1911790100037955 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FE1262C1911790100037955 /* VideoLoopingDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FE126241911790100037955 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FE125F91911790000037955 /* VideoLoopingDemo */;
+			targetProxy = 4FE126231911790100037955 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4FE126061911790000037955 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FE126071911790000037955 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4FE1260F1911790000037955 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FE126101911790000037955 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		4FE126121911790000037955 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FE126131911790000037955 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		4FE126281911790100037955 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FE126291911790100037955 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FE1262D1911790100037955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4FE1262E1911790100037955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FE126301911790100037955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoLoopingDemo/VideoLoopingDemo-Prefix.pch";
+				INFOPLIST_FILE = "VideoLoopingDemo/VideoLoopingDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4FE126311911790100037955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoLoopingDemo/VideoLoopingDemo-Prefix.pch";
+				INFOPLIST_FILE = "VideoLoopingDemo/VideoLoopingDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4FE126331911790100037955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VideoLoopingDemo.app/VideoLoopingDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoLoopingDemo/VideoLoopingDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VideoLoopingDemoTests/VideoLoopingDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4FE126341911790100037955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VideoLoopingDemo.app/VideoLoopingDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoLoopingDemo/VideoLoopingDemo-Prefix.pch";
+				INFOPLIST_FILE = "VideoLoopingDemoTests/VideoLoopingDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FE125F51911790000037955 /* Build configuration list for PBXProject "VideoLoopingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FE1262D1911790100037955 /* Debug */,
+				4FE1262E1911790100037955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FE1262F1911790100037955 /* Build configuration list for PBXNativeTarget "VideoLoopingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FE126301911790100037955 /* Debug */,
+				4FE126311911790100037955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4FE126321911790100037955 /* Build configuration list for PBXNativeTarget "VideoLoopingDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FE126331911790100037955 /* Debug */,
+				4FE126341911790100037955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FE125F21911790000037955 /* Project object */;
+}
