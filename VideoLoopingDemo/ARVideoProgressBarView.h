@@ -10,7 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <MediaPlayer/MediaPlayer.h>
 
-@protocol ARVideoPlayerLoopingOptionsDelegate <NSObject>
+@protocol ARVideoProgressBarViewDelegate <NSObject>
 - (void)saveTrimmerUpdates;
 @end
 

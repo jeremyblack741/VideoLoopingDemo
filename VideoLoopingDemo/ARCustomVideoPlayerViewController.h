@@ -31,6 +31,5 @@
 - (IBAction)play:sender;
 - (IBAction)fastforward:(id)sender;
 - (IBAction)rewind:(id)sender;
-- (IBAction)sliderValueChangedAction:(id)sender;
 
 @end

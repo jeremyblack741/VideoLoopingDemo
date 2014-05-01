@@ -33,7 +33,7 @@
     // self.clearsSelectionOnViewWillAppear = NO;
 
     if (self.includeRecommendedOption) {
-        self.contentSizeForViewInPopover = CGSizeMake(220, 170);
+        self.preferredContentSize = CGSizeMake(220, 170);
         self.menuOptions = @[
             @"No loop",
             @"Full video loop",
@@ -41,7 +41,7 @@
             @"Recommended"
         ];
     } else {
-        self.contentSizeForViewInPopover = CGSizeMake(220, 140);
+        self.preferredContentSize = CGSizeMake(220, 140);
         self.menuOptions = @[
             @"No loop",
             @"Full video loop",

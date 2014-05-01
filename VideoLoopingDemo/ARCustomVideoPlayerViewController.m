@@ -53,6 +53,7 @@ static const NSString* ItemStatusContext;
     if (self) {
         // Custom initialization
         _playerEverStarted = NO;
+        _timerStarted = NO;
 
         [self initScanRates];
     }
@@ -271,7 +272,7 @@ static const NSString* ItemStatusContext;
                                        selector:@selector(updateTime:)
                                        userInfo:nil
                                         repeats:YES];
-        _timerStarted = TRUE;
+        _timerStarted = YES;
     }
 }
 
