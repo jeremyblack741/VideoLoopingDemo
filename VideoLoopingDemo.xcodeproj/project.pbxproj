@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FA85B991912B8EE006BF2AE /* Wildlife_512kb.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4FA85B981912B8EE006BF2AE /* Wildlife_512kb.mp4 */; };
+		4FA85BA61912C01D006BF2AE /* button_fast-forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA85B9C1912C01D006BF2AE /* button_fast-forward.png */; };
+		4FA85BA71912C01D006BF2AE /* button_fast-forward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA85B9D1912C01D006BF2AE /* button_fast-forward@2x.png */; };
+		4FA85BA81912C01D006BF2AE /* button_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA85B9E1912C01D006BF2AE /* button_pause.png */; };
+		4FA85BA91912C01D006BF2AE /* button_pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA85B9F1912C01D006BF2AE /* button_pause@2x.png */; };
+		4FA85BAA1912C01D006BF2AE /* button_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA85BA01912C01D006BF2AE /* button_play.png */; };
+		4FA85BAB1912C01D006BF2AE /* button_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA85BA11912C01D006BF2AE /* button_play@2x.png */; };
+		4FA85BAC1912C01D006BF2AE /* button_rewind.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA85BA21912C01D006BF2AE /* button_rewind.png */; };
+		4FA85BAD1912C01D006BF2AE /* button_rewind@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA85BA31912C01D006BF2AE /* button_rewind@2x.png */; };
+		4FA85BAE1912C01D006BF2AE /* icon_slider-position-indicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA85BA41912C01D006BF2AE /* icon_slider-position-indicator.png */; };
+		4FA85BAF1912C01D006BF2AE /* icon_slider-position-indicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA85BA51912C01D006BF2AE /* icon_slider-position-indicator@2x.png */; };
+		4FA85BB41912C0DA006BF2AE /* button_loop.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA85BB01912C0DA006BF2AE /* button_loop.png */; };
+		4FA85BB51912C0DA006BF2AE /* button_loop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA85BB11912C0DA006BF2AE /* button_loop@2x.png */; };
+		4FA85BB61912C0DA006BF2AE /* button_no-loop.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA85BB21912C0DA006BF2AE /* button_no-loop.png */; };
+		4FA85BB71912C0DA006BF2AE /* button_no-loop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA85BB31912C0DA006BF2AE /* button_no-loop@2x.png */; };
+		4FA85BBA1912C9BF006BF2AE /* icon_slider-drag-black-bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA85BB81912C9BF006BF2AE /* icon_slider-drag-black-bar.png */; };
+		4FA85BBB1912C9BF006BF2AE /* icon_slider-drag-black-bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA85BB91912C9BF006BF2AE /* icon_slider-drag-black-bar@2x.png */; };
+		4FA85BC01912D223006BF2AE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA85BBF1912D223006BF2AE /* CoreData.framework */; };
+		4FA85BC31912D2A3006BF2AE /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FA85BC11912D2A3006BF2AE /* Model.xcdatamodeld */; };
+		4FA85BC61912D34D006BF2AE /* VideoPreference.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA85BC51912D34D006BF2AE /* VideoPreference.m */; };
 		4FE125FE1911790000037955 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE125FD1911790000037955 /* Foundation.framework */; };
 		4FE126001911790000037955 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE125FF1911790000037955 /* CoreGraphics.framework */; };
 		4FE126021911790000037955 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE126011911790000037955 /* UIKit.framework */; };
@@ -22,6 +42,12 @@
 		4FE126221911790100037955 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE126011911790000037955 /* UIKit.framework */; };
 		4FE1262A1911790100037955 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FE126281911790100037955 /* InfoPlist.strings */; };
 		4FE1262C1911790100037955 /* VideoLoopingDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1262B1911790100037955 /* VideoLoopingDemoTests.m */; };
+		4FE1263819117A6E00037955 /* ARVideoProgressBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1263719117A6E00037955 /* ARVideoProgressBarView.m */; };
+		4FE1263C19117CD800037955 /* ARCustomVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1263A19117CD800037955 /* ARCustomVideoPlayerViewController.m */; };
+		4FE1263D19117CD800037955 /* ARCustomVideoPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE1263B19117CD800037955 /* ARCustomVideoPlayerViewController.xib */; };
+		4FE1264019117D5C00037955 /* ARPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1263F19117D5C00037955 /* ARPlayerView.m */; };
+		4FE126431911845500037955 /* ARVideoPlayerLoopingOptionsPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE126421911845500037955 /* ARVideoPlayerLoopingOptionsPopoverViewController.m */; };
+		ECA4C708BD3B43A08A22C803 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73CF09CD8DF94EFE99CB4883 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +61,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4FA85B981912B8EE006BF2AE /* Wildlife_512kb.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Wildlife_512kb.mp4; path = Resources/Videos/Wildlife_512kb.mp4; sourceTree = "<group>"; };
+		4FA85B9C1912C01D006BF2AE /* button_fast-forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button_fast-forward.png"; path = "Resources/Images/videoPlayer/button_fast-forward.png"; sourceTree = "<group>"; };
+		4FA85B9D1912C01D006BF2AE /* button_fast-forward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button_fast-forward@2x.png"; path = "Resources/Images/videoPlayer/button_fast-forward@2x.png"; sourceTree = "<group>"; };
+		4FA85B9E1912C01D006BF2AE /* button_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_pause.png; path = Resources/Images/videoPlayer/button_pause.png; sourceTree = "<group>"; };
+		4FA85B9F1912C01D006BF2AE /* button_pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button_pause@2x.png"; path = "Resources/Images/videoPlayer/button_pause@2x.png"; sourceTree = "<group>"; };
+		4FA85BA01912C01D006BF2AE /* button_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_play.png; path = Resources/Images/videoPlayer/button_play.png; sourceTree = "<group>"; };
+		4FA85BA11912C01D006BF2AE /* button_play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button_play@2x.png"; path = "Resources/Images/videoPlayer/button_play@2x.png"; sourceTree = "<group>"; };
+		4FA85BA21912C01D006BF2AE /* button_rewind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_rewind.png; path = Resources/Images/videoPlayer/button_rewind.png; sourceTree = "<group>"; };
+		4FA85BA31912C01D006BF2AE /* button_rewind@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button_rewind@2x.png"; path = "Resources/Images/videoPlayer/button_rewind@2x.png"; sourceTree = "<group>"; };
+		4FA85BA41912C01D006BF2AE /* icon_slider-position-indicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_slider-position-indicator.png"; path = "Resources/Images/videoPlayer/icon_slider-position-indicator.png"; sourceTree = "<group>"; };
+		4FA85BA51912C01D006BF2AE /* icon_slider-position-indicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_slider-position-indicator@2x.png"; path = "Resources/Images/videoPlayer/icon_slider-position-indicator@2x.png"; sourceTree = "<group>"; };
+		4FA85BB01912C0DA006BF2AE /* button_loop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_loop.png; path = Resources/Images/videoPlayer/button_loop.png; sourceTree = "<group>"; };
+		4FA85BB11912C0DA006BF2AE /* button_loop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button_loop@2x.png"; path = "Resources/Images/videoPlayer/button_loop@2x.png"; sourceTree = "<group>"; };
+		4FA85BB21912C0DA006BF2AE /* button_no-loop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button_no-loop.png"; path = "Resources/Images/videoPlayer/button_no-loop.png"; sourceTree = "<group>"; };
+		4FA85BB31912C0DA006BF2AE /* button_no-loop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button_no-loop@2x.png"; path = "Resources/Images/videoPlayer/button_no-loop@2x.png"; sourceTree = "<group>"; };
+		4FA85BB81912C9BF006BF2AE /* icon_slider-drag-black-bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_slider-drag-black-bar.png"; path = "Resources/Images/videoPlayer/icon_slider-drag-black-bar.png"; sourceTree = "<group>"; };
+		4FA85BB91912C9BF006BF2AE /* icon_slider-drag-black-bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_slider-drag-black-bar@2x.png"; path = "Resources/Images/videoPlayer/icon_slider-drag-black-bar@2x.png"; sourceTree = "<group>"; };
+		4FA85BBF1912D223006BF2AE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4FA85BC21912D2A3006BF2AE /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		4FA85BC41912D34D006BF2AE /* VideoPreference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPreference.h; sourceTree = "<group>"; };
+		4FA85BC51912D34D006BF2AE /* VideoPreference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPreference.m; sourceTree = "<group>"; };
 		4FE125FA1911790000037955 /* VideoLoopingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoLoopingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE125FD1911790000037955 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4FE125FF1911790000037955 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +102,17 @@
 		4FE126271911790100037955 /* VideoLoopingDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VideoLoopingDemoTests-Info.plist"; sourceTree = "<group>"; };
 		4FE126291911790100037955 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4FE1262B1911790100037955 /* VideoLoopingDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoLoopingDemoTests.m; sourceTree = "<group>"; };
+		4FE1263619117A6E00037955 /* ARVideoProgressBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARVideoProgressBarView.h; sourceTree = "<group>"; };
+		4FE1263719117A6E00037955 /* ARVideoProgressBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARVideoProgressBarView.m; sourceTree = "<group>"; };
+		4FE1263919117CD800037955 /* ARCustomVideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCustomVideoPlayerViewController.h; sourceTree = "<group>"; };
+		4FE1263A19117CD800037955 /* ARCustomVideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCustomVideoPlayerViewController.m; sourceTree = "<group>"; };
+		4FE1263B19117CD800037955 /* ARCustomVideoPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ARCustomVideoPlayerViewController.xib; sourceTree = "<group>"; };
+		4FE1263E19117D5C00037955 /* ARPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARPlayerView.h; sourceTree = "<group>"; };
+		4FE1263F19117D5C00037955 /* ARPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARPlayerView.m; sourceTree = "<group>"; };
+		4FE126411911845500037955 /* ARVideoPlayerLoopingOptionsPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARVideoPlayerLoopingOptionsPopoverViewController.h; sourceTree = "<group>"; };
+		4FE126421911845500037955 /* ARVideoPlayerLoopingOptionsPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARVideoPlayerLoopingOptionsPopoverViewController.m; sourceTree = "<group>"; };
+		73CF09CD8DF94EFE99CB4883 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF184D0791564E80A8E59C85 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +120,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FA85BC01912D223006BF2AE /* CoreData.framework in Frameworks */,
 				4FE126001911790000037955 /* CoreGraphics.framework in Frameworks */,
 				4FE126021911790000037955 /* UIKit.framework in Frameworks */,
 				4FE125FE1911790000037955 /* Foundation.framework in Frameworks */,
+				ECA4C708BD3B43A08A22C803 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,13 +141,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FA85B961912B7BA006BF2AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4FA85B9A1912BFF9006BF2AE /* Images */,
+				4FA85B971912B7C2006BF2AE /* Videos */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4FA85B971912B7C2006BF2AE /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				4FA85B981912B8EE006BF2AE /* Wildlife_512kb.mp4 */,
+			);
+			name = Videos;
+			sourceTree = "<group>";
+		};
+		4FA85B9A1912BFF9006BF2AE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4FA85B9B1912C001006BF2AE /* videoPlayer */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		4FA85B9B1912C001006BF2AE /* videoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				4FA85BB81912C9BF006BF2AE /* icon_slider-drag-black-bar.png */,
+				4FA85BB91912C9BF006BF2AE /* icon_slider-drag-black-bar@2x.png */,
+				4FA85BB01912C0DA006BF2AE /* button_loop.png */,
+				4FA85BB11912C0DA006BF2AE /* button_loop@2x.png */,
+				4FA85BB21912C0DA006BF2AE /* button_no-loop.png */,
+				4FA85BB31912C0DA006BF2AE /* button_no-loop@2x.png */,
+				4FA85B9C1912C01D006BF2AE /* button_fast-forward.png */,
+				4FA85B9D1912C01D006BF2AE /* button_fast-forward@2x.png */,
+				4FA85B9E1912C01D006BF2AE /* button_pause.png */,
+				4FA85B9F1912C01D006BF2AE /* button_pause@2x.png */,
+				4FA85BA01912C01D006BF2AE /* button_play.png */,
+				4FA85BA11912C01D006BF2AE /* button_play@2x.png */,
+				4FA85BA21912C01D006BF2AE /* button_rewind.png */,
+				4FA85BA31912C01D006BF2AE /* button_rewind@2x.png */,
+				4FA85BA41912C01D006BF2AE /* icon_slider-position-indicator.png */,
+				4FA85BA51912C01D006BF2AE /* icon_slider-position-indicator@2x.png */,
+			);
+			name = videoPlayer;
+			sourceTree = "<group>";
+		};
 		4FE125F11911790000037955 = {
 			isa = PBXGroup;
 			children = (
+				4FA85BC11912D2A3006BF2AE /* Model.xcdatamodeld */,
 				4FE126031911790000037955 /* VideoLoopingDemo */,
 				4FE126251911790100037955 /* VideoLoopingDemoTests */,
 				4FE125FC1911790000037955 /* Frameworks */,
 				4FE125FB1911790000037955 /* Products */,
+				EF184D0791564E80A8E59C85 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,10 +213,12 @@
 		4FE125FC1911790000037955 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4FA85BBF1912D223006BF2AE /* CoreData.framework */,
 				4FE125FD1911790000037955 /* Foundation.framework */,
 				4FE125FF1911790000037955 /* CoreGraphics.framework */,
 				4FE126011911790000037955 /* UIKit.framework */,
 				4FE1261F1911790100037955 /* XCTest.framework */,
+				73CF09CD8DF94EFE99CB4883 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,6 +226,8 @@
 		4FE126031911790000037955 /* VideoLoopingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4FA85B961912B7BA006BF2AE /* Resources */,
+				4FE126351911799D00037955 /* Video Player */,
 				4FE1260C1911790000037955 /* ARAppDelegate.h */,
 				4FE1260D1911790000037955 /* ARAppDelegate.m */,
 				4FE1260F1911790000037955 /* Main_iPhone.storyboard */,
@@ -155,6 +269,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4FE126351911799D00037955 /* Video Player */ = {
+			isa = PBXGroup;
+			children = (
+				4FE1263919117CD800037955 /* ARCustomVideoPlayerViewController.h */,
+				4FE1263A19117CD800037955 /* ARCustomVideoPlayerViewController.m */,
+				4FE1263B19117CD800037955 /* ARCustomVideoPlayerViewController.xib */,
+				4FE1263619117A6E00037955 /* ARVideoProgressBarView.h */,
+				4FE1263719117A6E00037955 /* ARVideoProgressBarView.m */,
+				4FE1263E19117D5C00037955 /* ARPlayerView.h */,
+				4FE1263F19117D5C00037955 /* ARPlayerView.m */,
+				4FE126411911845500037955 /* ARVideoPlayerLoopingOptionsPopoverViewController.h */,
+				4FE126421911845500037955 /* ARVideoPlayerLoopingOptionsPopoverViewController.m */,
+				4FA85BC41912D34D006BF2AE /* VideoPreference.h */,
+				4FA85BC51912D34D006BF2AE /* VideoPreference.m */,
+			);
+			name = "Video Player";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,9 +294,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4FE1262F1911790100037955 /* Build configuration list for PBXNativeTarget "VideoLoopingDemo" */;
 			buildPhases = (
+				AF71D88765F8415BB624439A /* Check Pods Manifest.lock */,
 				4FE125F61911790000037955 /* Sources */,
 				4FE125F71911790000037955 /* Frameworks */,
 				4FE125F81911790000037955 /* Resources */,
+				D65E7983566D4C72A3428CE8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,10 +366,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FA85BBB1912C9BF006BF2AE /* icon_slider-drag-black-bar@2x.png in Resources */,
 				4FE126141911790000037955 /* Main_iPad.storyboard in Resources */,
+				4FA85BA61912C01D006BF2AE /* button_fast-forward.png in Resources */,
+				4FA85BA81912C01D006BF2AE /* button_pause.png in Resources */,
+				4FA85BAC1912C01D006BF2AE /* button_rewind.png in Resources */,
+				4FA85BA71912C01D006BF2AE /* button_fast-forward@2x.png in Resources */,
 				4FE126191911790000037955 /* Images.xcassets in Resources */,
 				4FE126111911790000037955 /* Main_iPhone.storyboard in Resources */,
+				4FA85BBA1912C9BF006BF2AE /* icon_slider-drag-black-bar.png in Resources */,
+				4FA85BB41912C0DA006BF2AE /* button_loop.png in Resources */,
+				4FA85BAA1912C01D006BF2AE /* button_play.png in Resources */,
+				4FA85B991912B8EE006BF2AE /* Wildlife_512kb.mp4 in Resources */,
+				4FA85BB61912C0DA006BF2AE /* button_no-loop.png in Resources */,
+				4FA85BAF1912C01D006BF2AE /* icon_slider-position-indicator@2x.png in Resources */,
+				4FA85BAB1912C01D006BF2AE /* button_play@2x.png in Resources */,
+				4FA85BB51912C0DA006BF2AE /* button_loop@2x.png in Resources */,
+				4FE1263D19117CD800037955 /* ARCustomVideoPlayerViewController.xib in Resources */,
+				4FA85BAE1912C01D006BF2AE /* icon_slider-position-indicator.png in Resources */,
 				4FE126081911790000037955 /* InfoPlist.strings in Resources */,
+				4FA85BB71912C0DA006BF2AE /* button_no-loop@2x.png in Resources */,
+				4FA85BA91912C01D006BF2AE /* button_pause@2x.png in Resources */,
+				4FA85BAD1912C01D006BF2AE /* button_rewind@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +401,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AF71D88765F8415BB624439A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D65E7983566D4C72A3428CE8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4FE125F61911790000037955 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -256,7 +441,13 @@
 			files = (
 				4FE1260A1911790000037955 /* main.m in Sources */,
 				4FE126171911790000037955 /* ARViewController.m in Sources */,
+				4FE126431911845500037955 /* ARVideoPlayerLoopingOptionsPopoverViewController.m in Sources */,
+				4FE1264019117D5C00037955 /* ARPlayerView.m in Sources */,
+				4FE1263C19117CD800037955 /* ARCustomVideoPlayerViewController.m in Sources */,
+				4FA85BC31912D2A3006BF2AE /* Model.xcdatamodeld in Sources */,
+				4FE1263819117A6E00037955 /* ARVideoProgressBarView.m in Sources */,
 				4FE1260E1911790000037955 /* ARAppDelegate.m in Sources */,
+				4FA85BC61912D34D006BF2AE /* VideoPreference.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +579,7 @@
 		};
 		4FE126301911790100037955 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF184D0791564E80A8E59C85 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -401,6 +593,7 @@
 		};
 		4FE126311911790100037955 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF184D0791564E80A8E59C85 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -471,6 +664,7 @@
 				4FE126311911790100037955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4FE126321911790100037955 /* Build configuration list for PBXNativeTarget "VideoLoopingDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -479,8 +673,22 @@
 				4FE126341911790100037955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4FA85BC11912D2A3006BF2AE /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4FA85BC21912D2A3006BF2AE /* Model.xcdatamodel */,
+			);
+			currentVersion = 4FA85BC21912D2A3006BF2AE /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4FE125F21911790000037955 /* Project object */;
 }
