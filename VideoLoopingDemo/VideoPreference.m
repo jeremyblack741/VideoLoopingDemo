@@ -8,7 +8,6 @@
 
 #import "VideoPreference.h"
 
-
 @implementation VideoPreference
 
 @dynamic loopEndTime;

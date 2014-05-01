@@ -21,10 +21,13 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YMa-np-V14" userLabel="Top Controls View">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YMa-np-V14" userLabel="Top Controls View">
                     <rect key="frame" x="0.0" y="0.0" width="1024" height="52"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="GuH-Ed-zmo"/>
+                    </constraints>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JHo-sd-dlD" userLabel="Player View" customClass="ARPlayerView">
                     <rect key="frame" x="0.0" y="83" width="1024" height="568"/>
@@ -84,6 +87,11 @@
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YMa-np-V14" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fDf-06-NcH"/>
+                <constraint firstAttribute="trailing" secondItem="YMa-np-V14" secondAttribute="trailing" id="n3s-b7-g2R"/>
+                <constraint firstItem="YMa-np-V14" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oaj-xd-XNj"/>
+            </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
         </view>

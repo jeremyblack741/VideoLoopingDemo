@@ -11,6 +11,6 @@
 
 @interface ARPlayerView : UIView
 
-@property (nonatomic) AVPlayer *player;
+@property (nonatomic) AVPlayer* player;
 
 @end

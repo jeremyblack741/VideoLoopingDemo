@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @protocol ARVideoPlayerLoopingOptionsDelegate <NSObject>
-- (void) selectLoopingOption:(int)option;
+- (void)selectLoopingOption:(int)option;
 @end
 
 @interface ARVideoPlayerLoopingOptionsPopoverViewController : UITableViewController

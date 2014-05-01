@@ -14,23 +14,23 @@
 
 @interface ARCustomVideoPlayerViewController : UIViewController
 
-@property (nonatomic, strong) AVPlayer *player;
-@property (nonatomic, strong) AVPlayerItem *playerItem;
-@property (nonatomic, strong) IBOutlet ARPlayerView *playerView;
-@property (nonatomic, strong) IBOutlet UIButton *playButton;
-@property (nonatomic, strong) IBOutlet UIButton *pauseButton;
-@property (nonatomic, strong) IBOutlet UIButton *fastforwardButton;
-@property (nonatomic, strong) IBOutlet UIButton *rewindButton;
-@property (nonatomic, strong) IBOutlet MPVolumeView *volumeView;
-@property (nonatomic, strong) IBOutlet ARVideoProgressBarView *editableProgressBar;
-@property (nonatomic, strong) IBOutlet UIView *topControlsOverrideView;
+@property (nonatomic, strong) AVPlayer* player;
+@property (nonatomic, strong) AVPlayerItem* playerItem;
+@property (nonatomic, strong) IBOutlet ARPlayerView* playerView;
+@property (nonatomic, strong) IBOutlet UIButton* playButton;
+@property (nonatomic, strong) IBOutlet UIButton* pauseButton;
+@property (nonatomic, strong) IBOutlet UIButton* fastforwardButton;
+@property (nonatomic, strong) IBOutlet UIButton* rewindButton;
+@property (nonatomic, strong) IBOutlet MPVolumeView* volumeView;
+@property (nonatomic, strong) IBOutlet ARVideoProgressBarView* editableProgressBar;
+@property (nonatomic, strong) IBOutlet UIView* topControlsOverrideView;
 
-- (void)playVideo:(NSURL *)videoURL;
--(IBAction)stop:(id)sender;
--(IBAction)pause:(id)sender;
--(IBAction)play:sender;
--(IBAction)fastforward:(id)sender;
--(IBAction)rewind:(id)sender;
--(IBAction)sliderValueChangedAction:(id)sender;
+- (void)playVideo:(NSURL*)videoURL;
+- (IBAction)stop:(id)sender;
+- (IBAction)pause:(id)sender;
+- (IBAction)play:sender;
+- (IBAction)fastforward:(id)sender;
+- (IBAction)rewind:(id)sender;
+- (IBAction)sliderValueChangedAction:(id)sender;
 
 @end

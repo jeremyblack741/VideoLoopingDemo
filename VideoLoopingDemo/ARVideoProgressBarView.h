@@ -11,21 +11,21 @@
 #import <MediaPlayer/MediaPlayer.h>
 
 @protocol ARVideoPlayerLoopingOptionsDelegate <NSObject>
-- (void) saveTrimmerUpdates;
+- (void)saveTrimmerUpdates;
 @end
 
 @interface ARVideoProgressBarView : UIView
 
-@property (nonatomic, strong) UISlider *currentTimeSlider;
-@property (nonatomic, strong) NSNumber *beginTrimTimeInSeconds;
-@property (nonatomic, strong) NSNumber *endTrimTimeInSeconds;
-@property (nonatomic, strong) AVPlayer *player;
+@property (nonatomic, strong) UISlider* currentTimeSlider;
+@property (nonatomic, strong) NSNumber* beginTrimTimeInSeconds;
+@property (nonatomic, strong) NSNumber* endTrimTimeInSeconds;
+@property (nonatomic, strong) AVPlayer* player;
 @property (nonatomic, assign) BOOL trimMode;
 @property (nonatomic, assign) BOOL allowCustomTrim;
 
 @property (nonatomic, assign) id delegate;
 
-- (void)updateTime:(NSTimer *)timer;
+- (void)updateTime:(NSTimer*)timer;
 - (void)setMaximumTime:(double)time;
 
 @end

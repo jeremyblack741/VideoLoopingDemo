@@ -9,11 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-
 @interface VideoPreference : NSManagedObject
 
-@property (nonatomic, retain) NSNumber * loopEndTime;
-@property (nonatomic, retain) NSNumber * loopStartTime;
-@property (nonatomic, retain) NSString * videoPath;
+@property (nonatomic, retain) NSNumber* loopEndTime;
+@property (nonatomic, retain) NSNumber* loopStartTime;
+@property (nonatomic, retain) NSString* videoPath;
 
 @end

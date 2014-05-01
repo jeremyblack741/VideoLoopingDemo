@@ -10,8 +10,8 @@
 #import "ARCustomVideoPlayerViewController.h"
 
 @interface ARViewController ()
-@property(nonatomic,weak) IBOutlet UIView *mainContentView;
-@property(nonatomic,strong) ARCustomVideoPlayerViewController *mainVideoViewController;
+@property (nonatomic, weak) IBOutlet UIView* mainContentView;
+@property (nonatomic, strong) ARCustomVideoPlayerViewController* mainVideoViewController;
 @end
 
 @implementation ARViewController
@@ -20,21 +20,22 @@
 {
     [super viewDidLoad];
 
-    self.mainVideoViewController = [[ARCustomVideoPlayerViewController alloc]  initWithNibName:@"ARCustomVideoPlayerViewController" bundle:nil];
+    self.mainVideoViewController = [[ARCustomVideoPlayerViewController alloc] initWithNibName:@"ARCustomVideoPlayerViewController"
+                                                                                       bundle:nil];
     [self addChildViewController:self.mainVideoViewController];
     self.mainVideoViewController.view.frame = self.mainContentView.bounds;
     [self.mainContentView addSubview:self.mainVideoViewController.view];
     [self.mainVideoViewController didMoveToParentViewController:self];
-    
-    
+
     [self playTestVideo];
 }
 
-- (void)playTestVideo {
-    NSURL *fileURL = [[NSBundle mainBundle] URLForResource:@"Wildlife_512kb" withExtension:@"mp4"];
+- (void)playTestVideo
+{
+    NSURL* fileURL = [[NSBundle mainBundle] URLForResource:@"Wildlife_512kb"
+                                             withExtension:@"mp4"];
     [self.mainVideoViewController playVideo:fileURL];
 }
-
 
 - (void)didReceiveMemoryWarning
 {

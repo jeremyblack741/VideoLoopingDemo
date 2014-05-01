@@ -19,17 +19,19 @@
     return self;
 }
 
-+ (Class)layerClass {
++ (Class)layerClass
+{
     return [AVPlayerLayer class];
 }
 
-- (AVPlayer*)player {
-    return [(AVPlayerLayer *)[self layer] player];
+- (AVPlayer*)player
+{
+    return [(AVPlayerLayer*)[self layer] player];
 }
 
-- (void)setPlayer:(AVPlayer *)player {
-    [(AVPlayerLayer *)[self layer] setPlayer:player];
+- (void)setPlayer:(AVPlayer*)player
+{
+    [(AVPlayerLayer*)[self layer] setPlayer:player];
 }
-
 
 @end
