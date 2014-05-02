@@ -33,7 +33,7 @@ typedef enum repeatModes {
     BOOL _playerEverStarted;
     BOOL _timerStarted;
     int _playbackProgress; // kludgy fix for multithreading issue
-    
+
     int _progressBarStartX;
     int _progressBarWidth;
     int _progressBarHeight;
@@ -145,23 +145,20 @@ static const NSString* ItemStatusContext;
     self.topControlsOverrideView = nil;
 }
 
-- (void)calculatePositions {
+- (void)calculatePositions
+{
     double percentToUseForProgressBar = 0.65;
     _progressBarHeight = 50;
     _progressBarWidth = self.view.frame.size.width * percentToUseForProgressBar;
     _progressBarStartX = (self.view.frame.size.width / 2) - (_progressBarWidth / 2);
     _buttonPaddingToRight = 30;
-    
-    _loopButtonStartX = self.view.frame.size.width - _loopButtonSize.width - _buttonPaddingToRight;
 
+    _loopButtonStartX = self.view.frame.size.width - _loopButtonSize.width - _buttonPaddingToRight;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-
-    //    [self loadAssetFromFile:nil];
 
     _currentRepeatMode = REPEAT_NONE;
 
@@ -179,7 +176,7 @@ static const NSString* ItemStatusContext;
             [self.topControlsOverrideView addSubview:self.editableProgressBar];
         }
     }
-    
+
     self.playerView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 
     self.loopButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -207,23 +204,20 @@ static const NSString* ItemStatusContext;
                                 forState:UIControlStateNormal];
 
     [self syncUI];
-    
-    
+
     // Turn off the loop button for phones (popovers don't work anyway)
     if ([UIDevice currentDevice].userInterfaceIdiom != UIUserInterfaceIdiomPad) {
         self.loopButton.hidden = YES;
     }
 }
 
-- (void)viewWillLayoutSubviews {
-    
-//    self.l
-//    self.loopButton.frame = CGRectMake(loopButtonStartX, 5, buttonImage.size.width, buttonImage.size.height);
+- (void)viewWillLayoutSubviews
+{
 
     [self calculatePositions];
     [self.editableProgressBar setFrame:CGRectMake(_progressBarStartX, 0, _progressBarWidth, _progressBarHeight)];
     [self.loopButton setFrame:CGRectMake(_loopButtonStartX, 5, _loopButtonSize.width, _loopButtonSize.height)];
-    
+
     NSLog(@"Device rotated - width=%f, height=%f", self.view.frame.size.width, self.view.frame.size.height);
 }
 
@@ -303,32 +297,6 @@ static const NSString* ItemStatusContext;
     self.playButton.hidden = NO;
     self.pauseButton.hidden = YES;
 }
-
-/*
-// Stop the player - play will start over
-- (IBAction)stop:(id)sender
-{
-    // If this is called, need to make sure the player has already loaded and started and is at least a second in to playback
-    // - otherwise call again
-    // NOTE that this _playbackprogress hack was a kludge to fix a multithreading issue if try to quickly skip or close
-    // presentation mode where the call to pause below would happen before the video playback had started.
-    if (_playbackProgress < 1 || !_playerEverStarted || self.player.rate == 0.0) {
-        [self performSelector:@selector(stop:)
-                   withObject:nil
-                   afterDelay:0.5];
-        return;
-    }
-
-    [self pause:nil];
-
-    [[NSNotificationCenter defaultCenter] postNotificationName:MPMoviePlayerPlaybackDidFinishNotification
-                                                        object:nil];
-    [self.player seekToTime:kCMTimeZero];
-
-    self.playButton.hidden = NO;
-    self.pauseButton.hidden = YES;
-}
- */
 
 - (IBAction)fastforward:(id)sender
 {
@@ -451,7 +419,7 @@ static const NSString* ItemStatusContext;
 {
     // Return YES for supported orientations
     return YES;
-//    return UIInterfaceOrientationIsLandscape(interfaceOrientation);
+    //    return UIInterfaceOrientationIsLandscape(interfaceOrientation);
 }
 
 - (NSUInteger)supportedInterfaceOrientations
@@ -588,6 +556,5 @@ static const NSString* ItemStatusContext;
 
     return file;
 }
-
 
 @end
