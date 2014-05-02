@@ -21,7 +21,7 @@
 
     CGPoint _startLocation;
     UIView* _viewToMove;
-    
+
     // positioning stuff - consider switching to autolayout
     int _labelWidth;
     int _labelHeight;
@@ -33,7 +33,8 @@
 
 @implementation ARVideoProgressBarView
 
-- (void)initLayoutConstants {
+- (void)initLayoutConstants
+{
     _labelWidth = 60;
     _labelHeight = 40;
     _labelTextYOffset = 3;
@@ -54,11 +55,7 @@
 
         self.currentTimeSlider = [[UISlider alloc] initWithFrame:CGRectMake(_labelWidth, 0, sliderWidth, _sliderHeight)];
         self.currentTimeSlider.continuous = YES;
-        //    self.currentTimeSlider.maximumValue = self.player.  ;
-        //    slider.maximumValue = CMTimeGetSeconds([player duration]);
         self.currentTimeSlider.value = CMTimeGetSeconds(self.player.currentTime);
-        //    player.currentTime = CMTimeMakeWithSeconds((int)slider.value,1);
-        //    self.currentTimeSlider.maximumValue = self.player.du
         [self.currentTimeSlider setThumbImage:[UIImage imageNamed:@"icon_slider-position-indicator.png"]
                                      forState:UIControlStateNormal];
         [self.currentTimeSlider addTarget:self
