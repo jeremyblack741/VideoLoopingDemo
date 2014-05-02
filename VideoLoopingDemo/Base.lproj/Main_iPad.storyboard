@@ -9,45 +9,32 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ARViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="0Me-zk-Clq"/>
+                        <viewControllerLayoutGuide type="bottom" id="pGp-nl-CnV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BHG-C6-HVk">
-                                <rect key="frame" x="0.0" y="26" width="1031" height="768"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BHG-C6-HVk">
+                                <rect key="frame" x="0.0" y="26" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BHG-C6-HVk" secondAttribute="trailing" id="8F9-n8-hHJ"/>
+                            <constraint firstItem="BHG-C6-HVk" firstAttribute="top" secondItem="0Me-zk-Clq" secondAttribute="bottom" constant="6" id="8UK-rR-JKI"/>
+                            <constraint firstItem="BHG-C6-HVk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DVg-PI-lLK"/>
+                            <constraint firstAttribute="bottom" secondItem="BHG-C6-HVk" secondAttribute="bottom" id="zBM-31-BDE"/>
+                        </constraints>
                     </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="mainContentView" destination="BHG-C6-HVk" id="Wtt-QZ-mrO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="iuk-cD-K5l">
-            <objects>
-                <viewController id="45f-kp-x1J" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xi5-7j-cdH"/>
-                        <viewControllerLayoutGuide type="bottom" id="qcV-Lz-Mjf"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bHi-Wm-zO9">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nzi-0t-EVF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>

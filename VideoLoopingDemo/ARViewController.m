@@ -20,6 +20,8 @@
 {
     [super viewDidLoad];
 
+    self.view.autoresizesSubviews = YES;
+
     self.mainVideoViewController = [[ARCustomVideoPlayerViewController alloc] initWithNibName:@"ARCustomVideoPlayerViewController"
                                                                                        bundle:nil];
     [self addChildViewController:self.mainVideoViewController];
@@ -28,7 +30,18 @@
     [self.mainVideoViewController didMoveToParentViewController:self];
 
     [self playTestVideo];
+
+    self.mainContentView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleHeight;
+    self.mainVideoViewController.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleHeight;
+    self.mainVideoViewController.view.autoresizesSubviews = YES;
+    
 }
+
+- (void)viewDidLayoutSubviews {
+    
+    self.mainVideoViewController.view.frame = self.mainContentView.bounds;
+}
+
 
 - (void)playTestVideo
 {
@@ -41,6 +54,22 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return YES;
+}
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskLandscape | UIInterfaceOrientationMaskPortrait;
+}
+
+- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    [super willAnimateRotationToInterfaceOrientation:toInterfaceOrientation
+                                            duration:duration];
 }
 
 @end

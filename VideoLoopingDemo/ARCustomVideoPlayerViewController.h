@@ -26,7 +26,7 @@
 @property (nonatomic, strong) IBOutlet UIView* topControlsOverrideView;
 
 - (void)playVideo:(NSURL*)videoURL;
-- (IBAction)stop:(id)sender;
+//- (IBAction)stop:(id)sender;
 - (IBAction)pause:(id)sender;
 - (IBAction)play:sender;
 - (IBAction)fastforward:(id)sender;

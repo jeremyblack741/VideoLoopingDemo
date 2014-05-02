@@ -245,12 +245,4 @@
     [self updateBeginAndEndTimesBasedOnTrimmers];
 }
 
-- (void)dealloc
-{
-    [self.currentTimeSlider removeFromSuperview];
-    [_timeElapsedLabel removeFromSuperview];
-    [_timeRemainingLabel removeFromSuperview];
-    self.player = nil;
-}
-
 @end

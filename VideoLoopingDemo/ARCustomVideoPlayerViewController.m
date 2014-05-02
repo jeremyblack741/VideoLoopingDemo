@@ -33,6 +33,13 @@ typedef enum repeatModes {
     BOOL _playerEverStarted;
     BOOL _timerStarted;
     int _playbackProgress; // kludgy fix for multithreading issue
+    
+    int _progressBarStartX;
+    int _progressBarWidth;
+    int _progressBarHeight;
+    int _buttonPaddingToRight;
+    int _loopButtonStartX;
+    CGSize _loopButtonSize;
 }
 
 @property (nonatomic, strong) NSURL* video;
@@ -138,6 +145,17 @@ static const NSString* ItemStatusContext;
     self.topControlsOverrideView = nil;
 }
 
+- (void)calculatePositions {
+    double percentToUseForProgressBar = 0.65;
+    _progressBarHeight = 50;
+    _progressBarWidth = self.view.frame.size.width * percentToUseForProgressBar;
+    _progressBarStartX = (self.view.frame.size.width / 2) - (_progressBarWidth / 2);
+    _buttonPaddingToRight = 30;
+    
+    _loopButtonStartX = self.view.frame.size.width - _loopButtonSize.width - _buttonPaddingToRight;
+
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -147,13 +165,8 @@ static const NSString* ItemStatusContext;
 
     _currentRepeatMode = REPEAT_NONE;
 
-    //    self.view.backgroundColor = [UIColor blackColor];
-
-    //    int progressBarControlWidth = 500;
-    double percentToUseForProgressBar = .5;
-    int progressBarControlWidth = self.view.frame.size.width * percentToUseForProgressBar;
-    self.editableProgressBar = [[ARVideoProgressBarView alloc] initWithFrame:CGRectMake(250, 0, progressBarControlWidth, 50)];
-    self.editableProgressBar.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+    [self calculatePositions];
+    self.editableProgressBar = [[ARVideoProgressBarView alloc] initWithFrame:CGRectMake(_progressBarStartX, 0, _progressBarWidth, _progressBarHeight)];
     self.editableProgressBar.delegate = self;
     self.editableProgressBar.player = self.player;
 
@@ -162,20 +175,20 @@ static const NSString* ItemStatusContext;
         [self.navigationController.navigationBar addSubview:self.editableProgressBar];
     } else {
         if (self.topControlsOverrideView) {
-            int startX = (self.view.frame.size.width / 2) - (progressBarControlWidth / 2);
-            [self.editableProgressBar setFrame:CGRectMake(startX, 0, progressBarControlWidth, 50)];
+            [self.editableProgressBar setFrame:CGRectMake(_progressBarStartX, 0, _progressBarWidth, _progressBarHeight)];
             [self.topControlsOverrideView addSubview:self.editableProgressBar];
         }
     }
+    
+    self.playerView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 
     self.loopButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     UIImage* buttonImage = [UIImage imageNamed:@"button_no-loop.png"];
     [self.loopButton setBackgroundImage:buttonImage
                                forState:UIControlStateNormal];
-    int padding = 30;
-    int loopButtonStartX = self.view.frame.size.width - buttonImage.size.width - padding;
+    _loopButtonSize = buttonImage.size;
+    int loopButtonStartX = self.view.frame.size.width - buttonImage.size.width - _buttonPaddingToRight;
     self.loopButton.frame = CGRectMake(loopButtonStartX, 5, buttonImage.size.width, buttonImage.size.height);
-    self.loopButton.autoresizingMask = UIViewAutoresizingFlexibleRightMargin;
 
     [self.loopButton addTarget:self
                         action:@selector(displayLoopingMenu:)
@@ -194,6 +207,24 @@ static const NSString* ItemStatusContext;
                                 forState:UIControlStateNormal];
 
     [self syncUI];
+    
+    
+    // Turn off the loop button for phones (popovers don't work anyway)
+    if ([UIDevice currentDevice].userInterfaceIdiom != UIUserInterfaceIdiomPad) {
+        self.loopButton.hidden = YES;
+    }
+}
+
+- (void)viewWillLayoutSubviews {
+    
+//    self.l
+//    self.loopButton.frame = CGRectMake(loopButtonStartX, 5, buttonImage.size.width, buttonImage.size.height);
+
+    [self calculatePositions];
+    [self.editableProgressBar setFrame:CGRectMake(_progressBarStartX, 0, _progressBarWidth, _progressBarHeight)];
+    [self.loopButton setFrame:CGRectMake(_loopButtonStartX, 5, _loopButtonSize.width, _loopButtonSize.height)];
+    
+    NSLog(@"Device rotated - width=%f, height=%f", self.view.frame.size.width, self.view.frame.size.height);
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -220,22 +251,9 @@ static const NSString* ItemStatusContext;
 
 - (void)playVideo:(NSURL*)videoURL
 {
-    /*
-    if (!self.currentVideo || ![video.key isEqualToString:self.currentVideo.key]) {
-        self.currentVideo = video;
-        [self loadAssetFromFile:video.filename];
-    }
-     */
     self.video = videoURL;
     [self loadAssetFromURL:videoURL];
 
-    /*
-    NSNumber *startTimeInSeconds = 0;
-    if (self.currentVideo.chapters && chapterIndex < self.currentVideo.chapters.count) {
-        ACVideoChapter *chapter = [video.chapters objectAtIndex:chapterIndex];
-        startTimeInSeconds = chapter.startTimestamp;
-    }
-     */
     [self performSelector:@selector(playStartingAtTime:)
                withObject:0
                afterDelay:0.5];
@@ -258,10 +276,6 @@ static const NSString* ItemStatusContext;
     self.pauseButton.hidden = NO;
     self.playButton.hidden = YES;
 
-    /*
-    if (!_updateTimer)
-        _updateTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateTime:) userInfo:nil repeats:YES];
-    */
     [self performSelector:@selector(updateProgressBarMaxTime)
                withObject:nil
                afterDelay:0.5];
@@ -290,6 +304,7 @@ static const NSString* ItemStatusContext;
     self.pauseButton.hidden = YES;
 }
 
+/*
 // Stop the player - play will start over
 - (IBAction)stop:(id)sender
 {
@@ -313,6 +328,7 @@ static const NSString* ItemStatusContext;
     self.playButton.hidden = NO;
     self.pauseButton.hidden = YES;
 }
+ */
 
 - (IBAction)fastforward:(id)sender
 {
@@ -434,12 +450,13 @@ static const NSString* ItemStatusContext;
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return UIInterfaceOrientationIsLandscape(interfaceOrientation);
+    return YES;
+//    return UIInterfaceOrientationIsLandscape(interfaceOrientation);
 }
 
 - (NSUInteger)supportedInterfaceOrientations
 {
-    return UIInterfaceOrientationMaskLandscape;
+    return UIInterfaceOrientationMaskLandscape | UIInterfaceOrientationMaskPortrait;
 }
 
 - (IBAction)displayLoopingMenu:(id)sender

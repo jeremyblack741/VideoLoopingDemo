@@ -23,20 +23,20 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YMa-np-V14" userLabel="Top Controls View">
                     <rect key="frame" x="0.0" y="0.0" width="1024" height="52"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="52" id="GuH-Ed-zmo"/>
+                        <constraint firstAttribute="height" constant="52" id="cvQ-sD-H48"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JHo-sd-dlD" userLabel="Player View" customClass="ARPlayerView">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JHo-sd-dlD" userLabel="Player View" customClass="ARPlayerView">
                     <rect key="frame" x="0.0" y="83" width="1024" height="568"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w2g-ml-eNr" userLabel="Player Bottom Controls View">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w2g-ml-eNr" userLabel="Player Bottom Controls View">
                     <rect key="frame" x="372" y="681" width="281" height="64"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <autoresizingMask key="autoresizingMask"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVP-JK-IJh" userLabel="FFButton">
                             <rect key="frame" x="183" y="20" width="36" height="28"/>
@@ -84,13 +84,26 @@
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="Drh-SV-TRf"/>
+                        <constraint firstAttribute="width" constant="281" id="bCt-ev-xeM"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="YMa-np-V14" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fDf-06-NcH"/>
-                <constraint firstAttribute="trailing" secondItem="YMa-np-V14" secondAttribute="trailing" id="n3s-b7-g2R"/>
-                <constraint firstItem="YMa-np-V14" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oaj-xd-XNj"/>
+                <constraint firstAttribute="centerX" secondItem="JHo-sd-dlD" secondAttribute="centerX" id="2Ac-BX-3el"/>
+                <constraint firstAttribute="centerX" secondItem="w2g-ml-eNr" secondAttribute="centerX" id="3YM-Z7-rsz"/>
+                <constraint firstItem="JHo-sd-dlD" firstAttribute="top" secondItem="YMa-np-V14" secondAttribute="bottom" constant="31" id="OT7-KU-eoB"/>
+                <constraint firstItem="JHo-sd-dlD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TzO-lc-7No"/>
+                <constraint firstAttribute="bottom" secondItem="w2g-ml-eNr" secondAttribute="bottom" constant="23" id="agf-gT-Zes"/>
+                <constraint firstAttribute="trailing" secondItem="JHo-sd-dlD" secondAttribute="trailing" id="bsn-ZI-aR1"/>
+                <constraint firstItem="w2g-ml-eNr" firstAttribute="top" secondItem="JHo-sd-dlD" secondAttribute="bottom" constant="30" id="cuo-lY-fVY"/>
+                <constraint firstItem="YMa-np-V14" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ffw-IP-BO6"/>
+                <constraint firstItem="YMa-np-V14" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iZN-NY-CLm"/>
+                <constraint firstItem="JHo-sd-dlD" firstAttribute="top" secondItem="YMa-np-V14" secondAttribute="bottom" constant="31" id="nAI-3w-NfM"/>
+                <constraint firstItem="YMa-np-V14" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qbd-34-bBQ"/>
+                <constraint firstAttribute="trailing" secondItem="YMa-np-V14" secondAttribute="trailing" id="twY-G8-PlU"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
