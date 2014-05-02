@@ -16,8 +16,11 @@ The looping control appears in the app as a modified video time scrubber but add
 in four different ways.
 
 No-loop
+
 Loop the entire video
+
 Loop a custom portion of the video
+
 Loop a pre-selected section of the video as specified by parameters passed in at playback
 
 
